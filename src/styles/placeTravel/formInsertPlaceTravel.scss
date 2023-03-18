@@ -1,0 +1,126 @@
+
+.form-insert-travel{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 0;
+
+    .title-form{
+        font-size: 30px;
+        font-weight: bold;
+        margin: 20px auto;
+    }
+
+    .container-form-update{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+
+        .Form{
+            width: 85%;
+            height: 100%;
+
+            .avatar-update{
+                width: 80px;
+                height: 80px;
+            }
+
+            .files{
+                display: flex;
+                flex-direction: column;
+
+                .fileChoose{
+                    display: flex;
+                    flex-direction: column;
+
+                    .decor-choose-file{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        border: 1px solid #ced4da;
+                        border-radius: 5px;
+                        height: 40px;
+
+                        .icon-chooseFile{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 0;
+                            width: 40%;
+                            height: 100%;
+                            border-radius: 5px;
+                            background-color: #e9ecef;
+                            cursor: pointer;
+                            .icon{
+                                width: 90%;
+                                height: 90%;
+                            }
+                        }
+
+                        .path{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .btn-update{
+            width: 15%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .button{
+                width: 90%;
+                .icon-update-travel{
+                    color: white;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .container-form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        .Form{
+            width: 89%;
+            height: 100%;
+
+            .form-group-area{
+                width: 100%;
+                height: 80px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                .input-text-area{
+                    width: 100%;
+                    border: 1px solid #ced4da;
+                    border-radius: 5px;
+                }
+            }
+        }
+
+        .btn-insert{
+            width: 10%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .button{
+                width: 90%;
+                .icon-post-travel{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

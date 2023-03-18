@@ -1,0 +1,152 @@
+
+.menu{
+    position: fixed;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    .avatar-user{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #3b3b3b;
+        padding: 10px 0;
+        z-index: 5;
+
+        .avatar{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                width: 30%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+        .name-user{
+            font-size: 20px;
+            color: whitesmoke;
+        }
+        .position-user{
+            color: rgb(166, 164, 164);
+            font-size: 15px;
+        }
+    }
+
+    .list-menu{
+        overflow: hidden;
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: #797878;
+
+        .block-temp{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .row-menu{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            line-height: 50px;
+            cursor: pointer;
+            .menu-parents{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                transition: background-color 0.2s;
+                z-index: 10;
+                .title-menu{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    .icon{
+                        font-size: 30px;
+                        color: white;
+                        margin-right: 10px;
+                        margin-left: 10px;
+                    }
+                    span{
+                        font-size: 20px;
+                        color: white;
+                        letter-spacing: 1px;
+                    }
+                }
+                .icon-down-left{
+                    font-size: 20px;
+                    color: white;
+                }
+            }
+
+            .menu-parents:hover{
+                background-color: #a7a7a9;
+            }
+
+            .menu-children{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-start;
+                transition: height 1s;
+                .row-menu-child{
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin-left: 20px;
+                    padding-left: 10px;
+
+                    .icon-list{
+                        color: white;
+                        font-size: 18px;
+                        margin-right: 5px;
+                        transition: color 1.2s;
+                    }
+
+                    span{
+                        color: white;
+                        transition: color 1.2s;
+                    }
+                    
+                    .color-white{
+                        color: white;
+                    }
+
+                    .color-transparent{
+                        color: transparent;
+                    }
+                }
+
+                .list-place-travel{
+                    top: 0;
+
+                }
+
+                .row-menu-child:hover{
+                    background-color: #a7a7a9;
+                }
+            }
+        }
+    }
+}
